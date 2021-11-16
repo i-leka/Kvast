@@ -1,0 +1,639 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    color: black;
+}
+
+h2, h3 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.container-2 {
+    width: 1015px;
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 630px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #834700;
+    color: #834700;
+    background-color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.1s linear;
+}
+
+.btn:hover {
+    color: #6a3900;
+    border-color: #6a3900;
+}
+
+.btn:active {
+    color: #6a3900;
+    border-color: #6a3900;
+    opacity: 0.3;
+}
+
+.btn-2 {
+    background-color: #834700;
+    color: white;
+    transition: all 0.1s linear;
+}
+
+.btn-2:hover {
+    color: white;
+    background-color: #6a3900;
+    border-color: #6a3900;
+}
+
+.btn-2:active {
+    color: white;
+    background-color: #6a3900;
+    border-color: #6a3900;
+    opacity: 0.3;
+}
+
+/*header*/
+
+header {
+    background: url("img/wheat-back.jpg") bottom no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 60px;
+}
+
+header .header-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 10px 0 0 0;
+    font-weight: bold;
+}
+
+.main-nav li {
+    padding: 14px 50px 14px 0;
+    border-top: 1px solid rgb(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+    transition: all 0.1s linear;
+}
+
+.main-nav li:hover {
+    border-bottom-color: white;
+}
+
+.main-nav li:hover a {
+    color: #ffcb78;
+}
+
+.main-nav li:active {
+    border-bottom-color: white;
+    opacity: 0.3;
+}
+
+.main-nav li:active a {
+    color: #ffcb78;
+}
+
+.main-nav li:last-of-type {
+    padding-right: 0;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.1s linear;
+}
+
+.main-nav a:hover {
+    color: white;
+}
+
+.header-bottom {
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 70px;
+    text-align: center;
+    padding: 120px 0;
+}
+
+/*new*/
+
+.new {
+    padding: 90px 0;
+}
+
+.new section {
+    width: 330px;
+    height: 800px;
+    padding: 0 35px;
+}
+
+.new .about-table {
+    width: 150px;
+    color: #404040;
+}
+
+.new .right {
+    position: absolute;
+    z-index: 1000;
+}
+
+.new-1 .right {
+    left: 440px;
+}
+
+.new-2 .right {
+    right: 255px;
+}
+
+.new img {
+    position: relative;
+}
+
+.new table, .new table td {
+    border-collapse: collapse;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.new .new-1 {
+    float: left;
+}
+
+.new .new-2 {
+    float: right;
+}
+
+.new .sect-bottom {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.new b {
+    padding-top: 10px;
+}
+
+/*advantages*/
+
+.advantages {
+    background-color: #ffcb78;
+    padding: 80px 0;
+}
+
+.advantages h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.advantages p {
+    color: #404040;
+}
+
+.advant-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advant-ul li {
+    width: 210px;
+    padding-right: 100px;
+    border-right: 1px solid #e5b66c;
+}
+
+.advant-ul li:last-of-type {
+    border-right: none;
+    padding-right: 0;
+}
+
+.advant-ul h2 {
+    position: relative;
+    padding-top: 70px;
+}
+
+.advant-ul .icon::before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    width: 65px;
+    height: 70px;
+    background: url("img/spritesheet.png") no-repeat;
+}
+
+.advant-ul .icon-1::before {
+    width: 50px;
+    height: 68px;
+    background-position: -69px -5px;
+}
+
+.advant-ul .icon-2::before {
+    width: 46px;
+    height: 65px;
+    background-position: -129px -31px;
+}
+
+.advant-ul .icon-3::before {
+    width: 63px;
+    height: 58px;
+    background-position: -5px -83px;
+}
+
+/*history*/
+
+.history {
+    padding: 90px 0;
+}
+
+.history h2 {
+    margin-bottom: 80px;
+}
+
+.history dd {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.history dt {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.history i {
+    font-weight: normal;
+    font-size: 16px;
+    text-transform: none;
+    color: #444444;
+}
+
+.history a {
+    color: #834700;
+    transition: all 0.1s linear;
+}
+
+.history a:hover {
+    color: #6a3900;
+}
+
+.history a:active {
+    color: #cab7a2;
+}
+
+.history p {
+    width: 490px;
+    margin: 0;
+}
+
+.history img {
+    margin: auto 0 0 0;
+}
+
+.history .term {
+    margin-bottom: 70px;
+}
+
+.history .term:last-of-type {
+    margin-bottom: 0;
+}
+
+/*about*/
+
+.about {
+    background-color: #ede5d8;
+    padding: 90px 0;
+}
+
+.about h2 {
+    margin-bottom: 90px;
+}
+
+.about blockquote {
+    width: 690px;
+    padding: 0;
+    margin: 0 0 40px 0;
+    color: #404040;
+}
+
+.about blockquote::before {
+    content: "";
+    position: absolute;
+    left: 90px;
+    width: 50px;
+    height: 50px;
+    background: url("img/spritesheet.png") -185px -91px no-repeat;
+}
+
+.about cite {
+    float: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-style: normal;
+    color: black;
+    align-self: center;
+}
+
+.about .btn {
+    color: black;
+    border-color: black;
+    background-color: transparent;
+    opacity: 0.3;
+    transition: all 0.1s linear;
+}
+
+.about .btn:hover {
+    background-color: #a5a097;
+    border-color: #a5a097;
+    color: white;
+    opacity: 1;
+}
+
+.about .btn:active {
+    background-color: #8f8a81;
+    border-color: #8f8a81;
+    color: rgb(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.about .about-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*price*/
+
+.price {
+    padding: 100px 0 90px;
+}
+
+.tbl-price {
+    width: 100%;
+    border-collapse: collapse;
+    text-transform: uppercase;
+}
+
+.tbl-price th {
+    font-size: 11px;
+    color: #999999;
+    font-weight: normal;
+    text-align: left;
+    padding: 40px 0;
+}
+
+.tbl-price td {
+    color: #404040;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 25px 0;
+}
+
+.tbl-price td:first-of-type {
+    color: black;
+    font-weight: bold;
+}
+
+.tbl-price sup {
+    margin-left: 10px;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: black;
+    font-size: 8px;
+    color: white;
+}
+
+.tbl-price tr th:last-of-type, .tbl-price tr td:last-of-type {
+    text-align: right;
+}
+
+/*form*/
+
+.form {
+    background-color: #ffcb78;
+    padding: 70px 0 105px;
+}
+
+.form p {
+    color: #404040;
+}
+
+.form label {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.form input[type=text], .form select, .form textarea {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0%, 0%, 0%, 0.1);
+    border: none;
+    color: rgb(0%, 0%, 0%, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.1s linear;
+}
+
+.form input[type=text]:hover, .form select:hover, .form textarea:hover {
+    background-color: rgb(0%, 0%, 0%, 0.15);
+}
+
+.form input[type=text]:focus, .form select:focus, .form textarea:focus {
+    background-color: white;
+    color: black;
+}
+
+.form textarea {
+    height: 150px;
+}
+
+.form .numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .numbers div {
+    width: 290px;
+}
+
+#chek {
+    display: none;
+}
+
+#chek+label {
+    display: inline-flex;
+    align-items: center;
+}
+
+#chek+label::before {
+    content: "";
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    color: black;
+    background-color: black;
+    opacity: 0.1;
+    margin-right: 10px;
+}
+
+#chek:checked+label::after {
+    content: "";
+    position: absolute;
+    margin-left: 10px;
+    background: url("img/spritesheet.png") no-repeat;
+    background-position: -5px -5px;
+    width: 17px;
+    height: 11px;
+}
+
+.form .btn {
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/*footer*/
+
+footer {
+    background-color: black;
+    color: #989898;
+    padding: 55px 0 45px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin: 0 auto 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom * {
+    display: inline-block;
+}
+
+.footer-bottom .social {
+    font-size: 0;
+}
+
+.footer-bottom .soc-btn {
+    width: 71px;
+    height: 67px;
+    background: #1b1b1b;
+    border: 1px solid rgb(96, 80, 55, 0.1);
+    transition: all 0.1s linear;
+}
+
+.footer-bottom .soc-btn:hover{
+    border-color: rgb(96, 80, 55, 1);
+}
+
+.footer-bottom .soc-btn:active{
+    border-color: rgb(96, 80, 55, 1);
+    opacity: 0.5;
+}
+
+.footer-bottom .soc-btn::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 25px;
+    background: url("img/spritesheet.png") no-repeat;
+    width: 20px;
+    height: 16px;
+}
+
+.footer-bottom .btn1::before {
+    background-position: -147px -5px;
+}
+
+.footer-bottom .btn2::before {
+    width: 8px;
+    margin-left: 30px;
+    background-position: -129px -5px
+}
+
+.footer-bottom .btn3:before {
+    margin-top: 27px;
+    background-position: -78px -106px;
+}
+
+.footer-bottom .wrn {
+    font-size: 14px;
+    line-height: 20px;
+    width: 203px;
+}
+
+.footer-bottom .bottom-right *{
+    vertical-align: middle;
+}
+
+.footer-bottom .author {
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.footer-bottom .author a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #989898;
+    padding-bottom: 2px;
+}
+
+.footer-bottom .logo-html {
+    margin-right: 30px;
+}
+
+.footer-bottom .logo-html::before {
+    content: "";
+    display: inline-block;
+    width: 27px;
+    height: 34px;
+    margin-top: 17px;
+    margin-left: 23px;
+    background: url("img/spritesheet.png") no-repeat;
+    background-position: -32px -5px;
+}
